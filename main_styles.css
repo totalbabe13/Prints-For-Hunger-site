@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126License: none (public domain)*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {}
+
+
+
+/* .text_1 {
+	  width: 100vw;
+    border: 19px solid white;
+    position: relative;
+    filter: brightness(1.5);
+    top: 0vh;
+}
+
+.text_2 {
+	  width: 100vw;
+    border: 19px solid white;
+    position: relative;
+    filter: brightness(1.5);
+    top: -1vh;
+}
+
+.text_3 {
+	  width: 100vw;
+    border: 19px solid white;
+    position: relative;
+    filter: brightness(1.5);
+    top: -1vh;
+} */
+p {
+	text-align: center;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 19vw;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #bbf6bd, #fff, #7af8bd, #10ff00, blue, red, #ffab00);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animate 5s cubic-bezier(0, 0.57, 1, 0.56) infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* BREAK POINTS */
+@media (min-width: 319px) {
+	.main-header{
+		font-family: 'Open Sans', sans-serif;
+		height: 10vh;
+    width: 100vw;
+    background-color: #c7effb;
+    border: 4px solid blue;
+    text-align: center;
+    line-height: 9vh;
+	}
+
+
+
+}
+
+/*
+@media (min-width: - -px) {}
+
+@media (min-width: - -px) {}
+
+@media (min-width: - -px) {}
+
+@media (min-width: - -px) {}
+
+@media (min-width: - -px) {}
+*/
