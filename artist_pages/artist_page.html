@@ -26,7 +26,7 @@
     <!-- SNIPCART STYLES  -->
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="landing_styles.css" rel="stylesheet">
+    <link href="artist_page.css" rel="stylesheet">
     <!-- SWIPER STYLES  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -35,19 +35,63 @@
 </head>
 <body>
   <div class="main-wrapper">
-    <div class="header-and-cart-container">
+     <div class="header-and-cart-container">
       <header>
         PRINTS FOR HUNGER
       </header>
-      <button class="snipcart-checkout">CART BUTTON</button>
+      <button class="snipcart-checkout">CART</button>
     </div>
-    
+
     <section >
       <p class="info-blurb">//Insert info blurb text here :)</p>
     </section>
+
     <nav class="nav-container">
       <a class="nav-item" href="#">About</a>
       <a class="nav-item" href="#">Artists</a>
       <a class="nav-item" href="#">Browse</a>
     </nav>
+
+    <section class="artist-page-container">
+      <div class=""></div>
+      <!-- <div class="image-cell"> -->
+         <!-- <img class="artist-image landscape" src="sample_image1.jpg" alt=""> -->
+         <img class="artist-image portrait" src="sample_image2.jpg" alt="">
+        <!-- <figcaption class="image-caption">Work Title, Artist Name</figcaption>
+        <figcaption class="image-caption"> Date </figcaption> -->
+      <!-- </div> -->
+    </section>
+      <figcaption class="image-caption">Work Title, Artist Name</figcaption>
+
+      <div class="button-container">
+        <figcaption class="image-caption"> Date </figcaption>
+
+        <button class="snipcart-add-item add-item-button"
+        data-item-id="1"
+        data-item-price="100.00"
+        data-item-url="/"
+        data-item-description="Brief blurb about photo here"
+        data-item-image="/assets/images/starry-night.jpg"
+        data-item-name="ITEM TITLE">
+         Add Item
+        </button>
+      </div>
+
+      <!-- <figcaption class="image-caption"> Date </figcaption>
+
+      <button class="snipcart-add-item add-item-button"
+      data-item-id="1"
+      data-item-price="100.00"
+      data-item-url="/"
+      data-item-description="Brief blurb about photo here"
+      data-item-image="/assets/images/starry-night.jpg"
+      data-item-name="ITEM TITLE">
+       Add Item
+      </button> -->
+
+
+  </div>
+
+    <div hidden id="snipcart" data-api-key="YmVkNDVkZjktYmY4OS00M2RkLWJlMmYtOWY4MDkwZjY1N2MxNjM3MjM1MzAyNjUyODIwMDgx"></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js"></script>
 </body>
