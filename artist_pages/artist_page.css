@@ -51,6 +51,8 @@ table {
     width: 100vw;
 		/* border: 2px solid red; */
 	}
+
+	/*  - - HEADER CSS STYLES FOR EVERY PAGE - - */
 	header {
 		position: relative;
     left: 2vw;
@@ -90,6 +92,19 @@ table {
 		color: green;
     margin: 0 4vw;
 	}
+	.nav-item.about{
+
+	}
+	.nav-item.artist{
+		justify-self: center;
+	}
+	.nav-item.browse{
+		justify-self: end;
+	}
+
+		/* - - END - - HEADER CSS STYLES FOR EVERY PAGE */
+
+
 	.artist-page-container {
 		height: 81%;
     width: 100%;

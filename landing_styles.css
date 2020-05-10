@@ -45,65 +45,74 @@ body {}
 /* BREAK POINTS */
 @media (min-width: 319px) {
 	.main-wrapper {
-		height: 100vh;
+	  height: 100vh;
     width: 100vw;
-    display: grid;
-    grid-template-rows: 10vh 7.5vh 7.5vh 74vh;
-
 		/* border: 2px solid red; */
-
 	}
+
+	/* HEADER CSS STYLES FOR EVERY PAGE */
 	header {
 		position: relative;
-    left: 2vw;
+		left: 2vw;
 		color: green;
-    font-family: sans-serif;
-    font-size: 17pt;
-    line-height: 9vh;
-		width: 98%;
+		font-family: sans-serif;
+		font-size: 17pt;
+		line-height: 2.8rem;
+		margin-left: 2vw;
 		/* border: 2px solid; */
 	}
 	.header-and-cart-container{
 		display: grid;
     grid-template-columns: 80% 20%;
+		height: 2.3em;
 	}
 	.info-blurb {
-		position: relative;
-    left: 2vw;
-		font-family: sans-serif;
-		color: green;
-    height: 6vh;
+		margin-left: 4vw;
+    font-family: sans-serif;
+    color: green;
+    height: 4vh;
     line-height: 5vh;
-		width: 98%;
-		font-size: 12pt;
+    font-size: 12pt;
 		/* border: 2px solid; */
 	}
 	.nav-container {
-		color: green;
-		font-family: sans-serif;
-    width: 100%;
-    height: 100%;
+		height: 2.8em;
+    color: green;
+    font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-		border-bottom: 2px solid green;
+    align-content: center;
+    border-bottom: 2px solid green;
 	}
 	.nav-item {
 		font-size: 12pt;
 		color: green;
-    margin: 0 2vw;
+    margin: 0 4vw;
 	}
+	.nav-item.about{}
+
+	.nav-item.artist{
+		justify-self: center;
+	}
+	.nav-item.browse{
+		justify-self: end;
+	}
+	/* - - END - - HEADER CSS STYLES FOR EVERY PAGE */
 
 	.image-grid {
+		position: relative;
+    top: 1vw;
 		width: 100%;
     height: 100%;
     display: grid;
     grid-auto-rows: 45vw;
     grid-template-columns: 49vw 49vw;
-		/* grid-column-gap: 1vw; */
 		grid-row-gap: 1vh;
 		overflow: scroll;
     /* border: 2px solid blue; */
+	}
+	.image-link-container{
+		margin: 0 auto;
 	}
 	.image-cell {
 		height: 45vw;
@@ -130,13 +139,46 @@ body {}
 	}
 
 	.cell-caption {
-		background-color: #8bc34a5c;
-		z-index: 1
+		line-height: 4vh;
+    text-align: center;
+		z-index: 1;
+    color: green;
 	}
 }
 
+
+@media (min-width: 600px) {
+	a {
+		max-width: 260px;
+		max-height: 270px;
+	}
+  .image-cell {
+		max-width: 260px;
+		max-height: 270px;
+	}
+}
+
+@media (min-width: 800px) {
+	.image-grid {
+		grid-auto-rows: 33vw;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1100px) {
+	.image-grid {
+		grid-auto-rows: 26vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1370px) {
+	.image-grid {
+		grid-auto-rows: 19vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
 /*
-@media (min-width: - -px) {}
 
 @media (min-width: - -px) {}
 
