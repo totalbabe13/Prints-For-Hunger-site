@@ -106,47 +106,63 @@ table {
 
 
 	.artist-page-container {
-		height: 81%;
-    width: 100%;
-		display: grid;
-    grid-template-rows: 2rem auto 2em;
+		position: relative;
+		width: 100vw;
+		height: 85vh;
+		overflow: scroll;
+		overflow-x: hidden;
+		/* display: grid; */
+    /* grid-template-rows: 2rem auto 2em; */
 		/* border: 1px solid blue; */
 	}
 	.artist-image {
 
 	}
+	.horizontal-image-container{
+		display: grid;
+	}
 	.artist-image.landscape{
-		max-width: 80%;
-    margin: 0 auto;
+		max-height: 31vw;
+    margin: 4vh 21.5vw;
+		justify-self: center;
+	}
+	.vertical-image-container{
+		width: 100vw;
+    height: 72vh;
+    display: grid;
 	}
 	.artist-image.portrait {
-		max-height: 90%;
-    margin: 0 auto;
+		height: 90%;
+    margin: 3.3vh auto;
 	}
 	.image-caption{
 		height: 2em;
     position: relative;
-		top: -4em;
-    left: 3vw;
-		line-height: 7vh;
+    left: 4vw;
+    line-height: 7vh;
     font-family: sans-serif;
     color: green;
-		font-style: italic;
+    font-style: italic;
 	}
 	.button-container{
 		display: grid;
-		grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 30%;
+    /* align-items: center; */
 	}
 
 	.add-item-button {
 		position: relative;
-    top: -6em;
-		justify-self: end;
-    width: 82px;
-    height: 28px;
+    left: -4vw;
+    justify-self: end;
+    width: 69px;
+    height: 23px;
     border: 3px solid green;
     border-radius: 37px;
     color: green;
+	}
+
+	.spacer {
+		height: 12vh
 	}
 }
 
