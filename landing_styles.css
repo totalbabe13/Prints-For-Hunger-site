@@ -107,6 +107,8 @@ table {
 		justify-self: end;
 	}
 	/* - - END - - HEADER CSS STYLES FOR EVERY PAGE */
+
+	/* IMAGE GRID STYLES */
 	.image-grid {
 		position: relative;
     top: 1vw;
@@ -126,6 +128,7 @@ table {
     width: 100%;
 		/* border: 2px solid pink; */
 	}
+
 	.thumbnail-image{
 		max-width: 100%;
 		max-height: 100%;
@@ -138,6 +141,7 @@ table {
 	.thumbnail-image.portrait {
 		margin: 0 16vw;
 	}
+	/* --END-- IMAGE GRID STYLES */
 }
 
 

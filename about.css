@@ -51,16 +51,16 @@ body {}
 	}
 
 	/* Breathing Animation  */
-  .breathing  {
-		-webkit-animation: color_change 12s infinite alternate;
-	  -moz-animation: color_change 12s infinite alternate;
-	  -ms-animation: color_change 12s infinite alternate;
-	  -o-animation: color_change 12s infinite alternate;
-	  animation: color_change 12s infinite alternate;
+	.breathing  {
+		-webkit-animation: color_change  9s infinite alternate;
+	  -moz-animation: color_change  9s infinite alternate;
+	  -ms-animation: color_change 9s infinite alternate;
+	  -o-animation: color_change  9s infinite alternate;
+	  animation: color_change  9s infinite alternate;
 	}
 	@-webkit-keyframes color_change {
-	  from { color: green; }
-  	to { color: yellowgreen; }
+	  from { color: #015d2b; }
+  	to { color: #89f793; }
   }
 
 	/* HEADER CSS STYLES FOR EVERY PAGE */

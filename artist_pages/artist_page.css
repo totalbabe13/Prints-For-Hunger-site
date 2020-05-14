@@ -51,6 +51,17 @@ table {
     width: 100vw;
 		/* border: 2px solid red; */
 	}
+	.breathing  {
+		-webkit-animation: color_change  9s infinite alternate;
+	  -moz-animation: color_change  9s infinite alternate;
+	  -ms-animation: color_change 9s infinite alternate;
+	  -o-animation: color_change  9s infinite alternate;
+	  animation: color_change  9s infinite alternate;
+	}
+	@-webkit-keyframes color_change {
+	  from { color: #015d2b; }
+  	to { color: #89f793; }
+  }
 
 	/*  - - HEADER CSS STYLES FOR EVERY PAGE - - */
 	header {
@@ -79,13 +90,12 @@ table {
 	}
 	.nav-container {
 		height: 2.8em;
-    color: green;
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
 		/* text-align: center; */
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid;
 	}
 	.nav-item {
 		font-size: 12pt;
@@ -156,9 +166,9 @@ table {
     justify-self: end;
     width: 69px;
     height: 23px;
-    border: 3px solid green;
+    border: 3px solid;
     border-radius: 37px;
-    color: green;
+    
 	}
 
 	.spacer {
