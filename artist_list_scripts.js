@@ -12,7 +12,7 @@ if (screen.width > 813) {
             console.log(`YY->dataId from link is ${dataId}`);
 
             let linkedImage = document.querySelector(`[data-image-id="${dataId}"]`)
-            // console.log(linkedImage);
+
             if(linkedImage){
               linkedImage.style.display = "unset";
             }

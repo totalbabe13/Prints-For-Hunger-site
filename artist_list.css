@@ -37,8 +37,18 @@ body {}
 .snipcart-checkout{
 	  height: 45px;
     width: 45px;
-    background-color: chartreuse;
 		margin: 9px auto;
+		border: none;
+}
+.cart {
+	display: unset;
+	filter: invert(48%)
+					sepia(79%)
+					saturate(2476%)
+					hue-rotate(86deg)
+					brightness(118%)
+					contrast(119%)
+					drop-shadow(1px 1px 1px grey);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -111,7 +121,7 @@ body {}
 	}
 	/* - - END - - HEADER CSS STYLES FOR EVERY PAGE */
 	.list-of-artists {
-		width: 27vw;
+		width: 62vw;
     height: 86%;
     position: relative;
     overflow: scroll;
@@ -156,14 +166,16 @@ body {}
 	}
 }
 
-@media (min-width: 525px) {
-  /* .list-of-artists{
-		grid-template-columns: 1fr 1fr;
-	} */
-}
 
-@media (min-width: 785px) {
-  /* .list-of-artists{
-		grid-template-columns: 260px 260px 260px;
-	} */
+@media (min-width: 813px) {
+	.list-of-artists {
+	 width: 27vw;
+	 height: 86%;
+	 position: relative;
+	 overflow: scroll;
+	 display: grid;
+	 grid-auto-rows: 1.8em;
+
+	 /* border: 2px solid #ce0000; */
+	}
 }

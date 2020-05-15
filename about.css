@@ -37,8 +37,18 @@ body {}
 .snipcart-checkout{
 	  height: 45px;
     width: 45px;
-    background-color: chartreuse;
 		margin: 9px auto;
+		border: none;
+}
+.cart {
+	fill: green;
+	filter: invert(48%)
+					sepia(79%)
+					saturate(2476%)
+					hue-rotate(86deg)
+					brightness(118%)
+					contrast(119%)
+					drop-shadow(1px 1px 1px grey);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
