@@ -137,6 +137,13 @@ table {
 	.artist-image {
 
 	}
+	.artist-web-link{
+		text-decoration: none;
+		color: unset;
+	}
+	.artist-web-link:hover {
+		filter: drop-shadow(0px 0px 2px chartreuse);
+	}
 	.horizontal-image-container{
 		display: grid;
 	}
